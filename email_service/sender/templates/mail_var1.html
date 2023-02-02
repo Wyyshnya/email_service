@@ -3,25 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-  {% load static %}
 </head>
 <body>
   <div style="position: relative;width: 614px;height: 833px;background: #C0EEE0;border-radius: 25px;">
-    <div style="position: absolute;left: 5.7%;right: 5.7%;top: 0.96%;bottom: 89.8%;font-family: 'Montserrat';font-style: normal;font-weight: 700;font-size: 32px;line-height: 150%;display: flex;align-items: center;justify-content:center;text-align: center;xcolor: #7FA0F5;">
-      <span style="font-family: 'Montserrat';font-style: normal;font-weight: 700;font-size: 32px;line-height: 150%;display: flex;align-items: center;text-align: center;color: #7FA0F5;">
-        Eco
-      </span>
-      <span style="font-family: 'Montserrat';font-style: normal;font-weight: 700;font-size: 32px;line-height: 150%;display: flex;align-items: center;text-align: center;color: #2E363E;">
-        .Crowd
-      </span>
-    </div>
     <div style="position: absolute;left: 12.54%;right: 12.7%;top: 10.57%;bottom: 89.43%;border: 1px solid #7FA0F5;">
     </div>
     <span style="position: absolute;left: 5.7%;right: 5.7%;top: 13.93%;bottom: 81.15%;font-family: 'Montserrat';font-style: normal;font-weight: 700;font-size: 28px;line-height: 145%;letter-spacing: -1px;color: #2E363E;">
       Ваш код для входа
     </span>
     <span style="position: absolute;left: 5.7%;right: 5.7%;top: 22.33%;bottom: 41.54%;font-family: 'Montserrat';font-style: normal;font-weight: 400;font-size: 21px;line-height: 143%;letter-spacing: -0.2px;color: #434B53;">
-      Здравствуйте!<br><br>
+      Здравствуйте, {{second_name}} {{first_name}}!<br><br>
 
       Вы получили это письмо, чтобы подтвердить вход в вашу учетную запись {{email}}<br><br>
 
@@ -32,11 +23,6 @@
     </span>
     <span style="position: absolute;left: 5.54%;right: 5.86%;top: 65.55%;bottom: 29.53%;font-family: 'Montserrat';font-style: normal;font-weight: 700;font-size: 28px;line-height: 145%;text-align: center;letter-spacing: -1px;color: #2E363E;">
       {{ code }}</span>
-    <span style="position: absolute;left: 5.7%;right: 5.7%;top: 81.27%;bottom: 8.04%;font-family: 'Montserrat';font-style: normal;font-weight: 400;font-size: 21px;line-height: 143%;letter-spacing: -0.2px;color: #434B53;">
-      Спасибо,<br><br>
-
-      Команда Eco.Crowd
-    </span>
     </div>
   </div>
 </body>

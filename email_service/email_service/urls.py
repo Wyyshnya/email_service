@@ -16,5 +16,5 @@ Including another URLconf
 from django.conf.urls import url, include
 
 urlpatterns = [
-    url(r'send/', include('sender.urls')),
+    url(r'sender/', include('sender.urls')),
 ]
