@@ -10,10 +10,11 @@ logger = get_task_logger(__name__)
 
 
 @task(name='send_email_task')
-def send_email_task(template_name, user_list):
+def send_email_task(template_name, user_list, image_url):
     for user in user_list:
         html_message = render_to_string(template_name, {"email": user['email'], "code": random.randint(100000, 999999),
-                                                        "first_name": user['first_name'], "second_name": user['second_name']})
+                                                        "first_name": user['first_name'], "second_name": user['second_name'],
+                                                        "image_url": image_url})
         message = strip_tags(html_message)
         send_mail('Email', message, recipient_list=[user['email'], ], from_email=settings.EMAIL_HOST_USER, html_message=html_message)
 
